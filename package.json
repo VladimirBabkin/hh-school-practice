@@ -8,13 +8,19 @@
   "scripts": {
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url './'",
+    "format": "yarn prettier  --write js",
+    "postinstall": "cp -p tools/pre-commit .git/hooks || true",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
-    "@parcel/transformer-less": "^2.8.0",
-    "gh-pages": "^3.2.3",
-    "less": "^4.1.3",
-    "parcel": "^2.8.0"
+    "@parcel/reporter-bundle-analyzer": "2.13.2",
+    "@parcel/transformer-less": "2.13.2",
+    "gh-pages": "6.2.0",
+    "less": "4.2.1",
+    "lint-staged": "15.2.11",
+    "parcel": "2.13.2",
+    "prettier": "3.4.2",
+    "svgo": "^3"
   },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "packageManager": "yarn@4.5.3"
 }
