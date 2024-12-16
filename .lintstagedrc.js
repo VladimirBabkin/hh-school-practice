@@ -1,3 +1,3 @@
 module.exports = {
-    '*.js': ['npm run format --'],
+    'js/**/*.js': ['yarn format', 'yarn lint'],
 };
