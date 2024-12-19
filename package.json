@@ -9,13 +9,17 @@
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url './'",
     "format": "yarn prettier  --write js",
+    "lint": "yarn run eslint js",
     "postinstall": "cp -p tools/pre-commit .git/hooks || true",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
+    "@eslint/js": "9.17.0",
     "@parcel/reporter-bundle-analyzer": "2.13.2",
     "@parcel/transformer-less": "2.13.2",
+    "eslint": "9.17.0",
     "gh-pages": "6.2.0",
+    "globals": "15.13.0",
     "less": "4.2.1",
     "lint-staged": "15.2.11",
     "parcel": "2.13.2",
