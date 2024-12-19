@@ -14,16 +14,4 @@ export default [
         }
     },
     pluginJs.configs.recommended,
-    { files: ['js/**/*.js'],
-        rules: {
-            quotes: ['error', 'single'],
-            indent: ['error', 4],
-        }},
-    {
-        files: ['*.json'],
-        rules: {
-            semi: true,
-            indent: 4,
-        }
-    }
 ];
